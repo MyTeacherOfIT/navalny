@@ -36,7 +36,7 @@ async def cmd_start(message: Message):
               "Россия будущего недалеко! Спасибо, Алексей, за все!🕯️💔\n\n" \
               "Хотим сообщить, что мы не собираем никакую информацию о вас!\n\n" \
               "Здесь горит {} {}.".format(len(a), candle)
-    await message.answer_video(video="****************************************************************************************************", caption=caption, reply_markup=start, parse_mode="HTML")
+    await message.answer_video(video='BAACAgIAAxkBAAN1ZeR1A2G8dzN2WcNLKIImaGn9szUAAjRFAALw2CFLh9XpI1Q8su00BA', caption=caption, reply_markup=start, parse_mode="HTML")
 
 
 @router.callback_query(F.data == "yes")
@@ -63,7 +63,7 @@ async def cmd_navalny(callback: CallbackQuery):
               "Россия будущего недалеко! Спасибо, Алексей, за все!🕯️💔\n\n" \
               "Хотим сообщить, что мы не собираем никакую информацию о вас!\n\n" \
               "Здесь горит {} {}.".format(len(a), candle)
-    await callback.message.answer_video(video="******************************************************************************************", caption=caption, reply_markup=start, parse_mode="HTML")
+    await callback.message.answer_video(video="BAACAgIAAxkBAAN1ZeR1A2G8dzN2WcNLKIImaGn9szUAAjRFAALw2CFLh9XpI1Q8su00BA", caption=caption, reply_markup=start, parse_mode="HTML")
 
 
 @router.message(Command("navalny"))
@@ -73,7 +73,7 @@ async def cmd_navalny(message: Message):
 
 @router.message(Command("code"))
 async def cmd_code(message: Message):
-    await message.answer("Мы не срываем исходный код этого бота. Код можно просмотреть на сайте https://github.com/")
+    await message.answer("Мы не срываем исходный код этого бота. Код можно просмотреть на сайте https://github.com/MyTeacherOfIT/navalny")
 
 
 @router.message()
